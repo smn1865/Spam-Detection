@@ -12,3 +12,6 @@ df['Length'] = df['Message'].str.len()
 
 df['Message'] = df['Message'].str.translate(str.maketrans('','',string.punctuation))
 
+df = df['Message'].str.lower().str.split()
+print(df.head())
+

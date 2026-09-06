@@ -10,3 +10,9 @@ print(df['Class'].value_counts(normalize=True))
 
 df['Length'] = df['Message'].str.len()
 
+<<<<<<< HEAD
+=======
+df = pd.read_csv('spam.csv', encoding = 'latin-1')
+print(df.describe())
+print(df.head())
+>>>>>>> 59c5e5f (ok)

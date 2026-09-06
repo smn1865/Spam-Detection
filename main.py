@@ -11,8 +11,3 @@ print(df['Class'].value_counts(normalize=True))
 df['Length'] = df['Message'].str.len()
 
 
-df = pd.read_csv('spam.csv', encoding = 'latin-1')
-print(df.describe())
-
-df = df['Message'].str.lower().str.split()
-print(df.head())

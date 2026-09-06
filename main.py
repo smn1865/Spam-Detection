@@ -10,3 +10,4 @@ print(df['Class'].value_counts(normalize=True))
 
 df['Length'] = df['Message'].str.len()
 
+df['Message'] = df['Message'].str.translate(str.maketrans('','',string.punctuation))

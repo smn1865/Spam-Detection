@@ -4,4 +4,4 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 df = pd.read_csv('spam.csv')
-print(df.info())
+print(df.head())
